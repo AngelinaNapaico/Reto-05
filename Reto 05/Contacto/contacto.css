@@ -1,0 +1,138 @@
+/* Estilos Generales para la Página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf3f5;  /* Fondo suave y cálido */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor del formulario */
+  .contact-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .contact-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;  /* Bordes más redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+    background: linear-gradient(to right, #f8d7dd, #ff6f61);  /* Degradado sutil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000000;  /* Color rosa elegante */
+    font-family: 'Georgia', serif;
+    margin-top: 0;
+  }
+  
+  /* Estilo para cada fila de formulario */
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;  /* Centra los campos dentro de su contenedor */
+  }
+  
+  label {
+    font-weight: bold;
+    color: #000000;  /* Rosa suave */
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 80%;  /* Ajustamos el ancho para hacerlo más pequeño y centrado */
+    padding: 14px;
+    border: 1px solid #f31768;  /* Borde suave */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #d5006d;  /* Rosa más fuerte */
+    background-color: #ffe6f0;  /* Fondo sutil al hacer foco */
+    outline: none;
+  }
+  
+  /* Estilo para el área de mensaje */
+  textarea {
+    height: 160px;
+    resize: vertical;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    width: 80%;  /* El botón también se ajusta al 80% del ancho */
+    padding: 16px;
+    background-color: #ff6f61;  /* Rosa fuerte */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;  /* Añadimos algo de espacio entre los campos y el botón */
+    align-self: center;  /* Centra el botón dentro del formulario */
+  }
+  
+  button:hover {
+    background-color: #ac6f6f;  /* Rosa oscuro al pasar el mouse */
+    transform: scale(1.05);  /* Efecto de escala */
+    
+  }
+  
+  /* Estilo para validación */
+  input:invalid, textarea:invalid {
+    border-color: #f44336;  /* Rojo suave para campos inválidos */
+  }
+  
+  input:valid, textarea:valid {
+    border-color: #66bb6a;  /* Verde suave para campos válidos */
+  }
+  
+  input:focus:invalid, textarea:focus:invalid {
+    border-color: #f44336;  /* Rojo suave para campos inválidos */
+  }
+  
+  input:focus:valid, textarea:focus:valid {
+    border-color: #66bb6a;  /* Verde suave para campos válidos */
+  }
+  
+  /* Estilo para mensajes de error (si decides agregar validación visual) */
+  .error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .contact-section {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  }
